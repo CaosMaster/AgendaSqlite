@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Nombre"
+            />
+
+        <EditText
+            android:id="@+id/txtnombre"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="numero"
+            />
+
+
+        <EditText
+            android:id="@+id/txtnumero"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            />
+
+        </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnañadir"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="Añadir"
+            android:layout_weight="1"
+            android:onClick="anadir"
+            />
+
+        <Button
+            android:id="@+id/btneditar"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="Editar"
+            android:layout_weight="1"
+            android:onClick="editar"
+            />
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="Eliminar"
+            android:onClick="eliminar"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConsultar"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:text="Consultar"
+        android:onClick="consultar"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/txttodo"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:text=""
+        />
+
+    <Button
+        android:id="@+id/btndelBD"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="DELETE BD"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="borrarBD"
+        />
+</LinearLayout>
